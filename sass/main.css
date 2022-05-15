@@ -1,0 +1,293 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.button {
+  padding: 1.5% 3%;
+  border-radius: 0.75rem;
+  background-color: rgb(224, 105, 0);
+  color: white;
+  white-space: nowrap;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1rem;
+  letter-spacing: 0.5;
+  font-weight: 700;
+}
+
+.container {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+body {
+  background-color: white;
+  font-family: Poppins, sans-serif;
+  color: rgb(255, 94, 0);
+  font-size: 1.5rem;
+  font-weight: 500;
+  max-width: 100%;
+  line-height: 2.5;
+  letter-spacing: 1;
+}
+
+.floatRt {
+  float: right;
+}
+
+.margTop {
+  margin-top: 2%;
+}
+
+.topNav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0.25% 1%;
+}
+.topNav a {
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.topNav img {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-right: 1rem;
+}
+
+.header {
+  width: 100%;
+  background-color: #2A5391;
+  height: 100%;
+}
+.header .logoTop {
+  width: 15%;
+  padding: 2% 0 0 2%;
+}
+.header .imgTxt {
+  width: 100%;
+  display: flex;
+  color: #fff;
+}
+.header .imgTxt p {
+  padding: 5% 2% 2% 2%;
+}
+.header .imgTxt p a {
+  padding: 2% 4%;
+}
+.header .imgTxt img {
+  width: 300%;
+  position: relative;
+  top: 5%;
+}
+
+.nav, .box {
+  position: absolute;
+  background-color: #fff;
+  right: 6%;
+}
+.nav a, .box a {
+  padding: 2%;
+  font-size: 1rem;
+  white-space: nowrap;
+}
+
+.box {
+  height: 45%;
+  box-shadow: 2px 2px 4px #918f8f;
+  left: 6%;
+  top: 92%;
+}
+.box p {
+  color: #2A5391;
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.box .boxImg {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.head, .crdHead, .crdSubHead {
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.subHead {
+  color: #2A5391;
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.section {
+  display: flex;
+  width: 96%;
+}
+
+.imgBox {
+  display: flex;
+  width: 30%;
+  flex-direction: column;
+}
+.imgBox img {
+  width: 6rem;
+  height: 6rem;
+  justify-content: center;
+  align-items: center;
+  margin: 2% auto;
+}
+
+.crdHead, .crdSubHead {
+  color: #2A5391;
+  font-weight: 800;
+  text-align: center;
+  white-space: wrap;
+  padding: 5%;
+}
+
+.crdSubHead {
+  font-weight: 500;
+  white-space: wrap;
+}
+
+.column {
+  display: flex;
+  width: 30%;
+  flex-direction: column;
+}
+
+.img {
+  width: 90%;
+  height: 50%;
+}
+
+.crdtxt {
+  color: #2A5391;
+  text-align: left;
+}
+
+.footer {
+  background-repeat: no-repeat;
+  background-color: #2A5391;
+  height: auto;
+  box-sizing: border-box;
+}
+.footer__head {
+  padding: 15px 0;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.footer .subhead {
+  font-weight: 900;
+  font-size: 1rem;
+  text-align: left;
+}
+.footer__footerbox {
+  width: 100%;
+  display: flex;
+  height: auto;
+  background-color: #2A5391;
+  padding-left: 2%;
+  color: #fff;
+  line-height: 2;
+  margin: 0 auto;
+}
+.footer__footerbox .formdata {
+  font-size: 0.7rem;
+  font-weight: 100;
+}
+.footer__icon {
+  width: 5rem;
+  background-color: #2A5391;
+  padding: 0 2rem 1rem 0;
+  height: auto;
+}
+.footer .logo {
+  width: 13rem;
+  height: auto;
+  padding-bottom: 3rem;
+  background-color: #2A5391;
+}
+.footer__txt, .iconContainer a, .footer__.head3 {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  padding: 0.5rem;
+  font-weight: 100;
+  color: #fff;
+}
+.footer__.head3 {
+  font-weight: 800;
+}
+
+.iconContainer {
+  display: flex;
+  align-items: center;
+}
+.iconContainer a {
+  text-decoration: none;
+  padding-right: 3%;
+  white-space: nowrap;
+}
+
+.social_logo {
+  width: 2.5rem;
+  height: 2.5rem;
+  padding-right: 0.75rem;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  padding-right: 5rem;
+}
+
+.lrgInput {
+  width: 70%;
+  height: 2rem;
+  background-color: #fff;
+}
+
+.smlInput {
+  width: 97%;
+  height: 2rem;
+  background-color: #fff;
+}
+
+.half {
+  width: 50%;
+  display: flex;
+}
+
+.full {
+  width: 100%;
+  margin-bottom: 0.5%;
+}
+
+.footerRow {
+  background-color: #190450;
+  text-align: center;
+  color: #918f8f;
+  font-size: 0.75rem;
+}
+
+.fullcont {
+  width: 100%;
+  margin: 0 auto;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,25 @@
+@mixin flx{
+    display: flex;
+}
+@mixin cent {
+    margin: 0 auto;
+}
+
+@mixin centerTxt{
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+@mixin  colFlx {
+    @include flx;
+        width: 30%;
+        flex-direction: column;
+}
+@mixin imgIcon{
+    width: 5rem;
+    background-color: $ftrBg;
+    padding: 0 2rem 1rem 0;
+    height: auto;
+
+}

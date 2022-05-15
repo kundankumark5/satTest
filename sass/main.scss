@@ -1,0 +1,264 @@
+@import "./abstract/constant";
+
+@import "./abstract/mixins";
+
+@import "./abstract/variable";
+
+@import "./base/reset";
+
+@import "./base/typography";
+
+@import "./components/button";
+
+@import "./components/container";
+
+body {
+  background-color: $bg;
+  font-family: $font-fam1;
+  color: $font-clr;
+  font-size: $font-sz;
+  font-weight: $font-wt;
+  max-width: 100%;
+  line-height: $lineHt;
+  letter-spacing: $ltrSpc;
+}
+.floatRt {
+  float: right;
+}
+.margTop {
+  margin-top: $margTop;
+}
+.topNav {
+  @include flx;
+  justify-content: space-around;
+  align-items: center;
+
+  margin: 0.25% 1%;
+  a {
+    @include centerTxt;
+  }
+
+  img {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: $ftr_sbHead;
+  }
+}
+.header {
+  width: $wd;
+  background-color: $hdrFtrBg;
+  height: 100%;
+  .logoTop {
+    width: 15%;
+    padding: 2% 0 0 2%;
+  }
+
+  .imgTxt {
+    width: $wd;
+    @include flx;
+    // flex-direction:row-reverse;
+    color: $footertxtClr;
+    p {
+      padding: 5% 2% 2% 2%;
+      a {
+        padding: 2% 4%;
+      }
+    }
+    img {
+      width: 300%;
+
+      position: $pos1;
+      top: 5%;
+    }
+  }
+}
+.nav {
+  position: $pos2;
+  background-color: $crdBg;
+  right: 6%;
+  a {
+    padding: 2%;
+    font-size: $ftr_sbHead;
+    white-space: nowrap;
+  }
+}
+
+.box {
+  @extend .nav;
+  height: 45%;
+  box-shadow: 2px 2px 4px $shadow;
+  left: 6%;
+  top: 92%;
+  p {
+    color: $blue;
+    font-weight: $hdfontWt;
+    @include centerTxt;
+  }
+  .boxImg {
+    @include flx;
+    justify-content: space-around;
+    @include centerTxt;
+  }
+}
+
+.head {
+  @include centerTxt;
+  font-size: $ftr_sbHead;
+}
+
+.subHead {
+  color: $blue;
+  font-weight: $hdfontWt;
+  @include centerTxt;
+}
+
+.section {
+  @include flx;
+  // justify-content: space-around;
+  width: 96%;
+}
+.imgBox {
+  @include colFlx;
+  img {
+    width: 6rem;
+    height: 6rem;
+    justify-content: center;
+    align-items: center;
+    margin: 2% auto;
+  }
+}
+
+.crdHead {
+  @extend .head;
+  color: $blue;
+  font-weight: $hdfontWt;
+  text-align: center;
+  white-space: wrap;
+  padding: 5%;
+}
+
+.crdSubHead {
+  @extend .crdHead;
+  font-weight: $font-wt;
+  white-space: wrap;
+}
+.column {
+  @include colFlx;
+}
+
+.img {
+  width: 90%;
+  height: 50%;
+}
+.crdtxt {
+  color: $blue;
+  text-align: left;
+}
+
+.footer {
+  // background-image: url("./assets/footer.png");
+  background-repeat: no-repeat;
+  background-color: $ftrBg;
+
+  height: auto;
+  box-sizing: border-box;
+
+  &__head {
+    padding: 15px 0;
+
+    color: $footertxtClr;
+    @include centerTxt;
+  }
+  .subhead {
+    font-weight: 900;
+    font-size: $ftr_sbHead;
+    text-align: left;
+  }
+
+  &__footerbox {
+    width: 100%;
+    @include flx;
+    height: auto;
+    background-color: $ftrBg;
+    padding-left: $pad-left;
+    color: $footertxtClr;
+    line-height: $ftrLineHt;
+    margin: 0 auto;
+    .formdata {
+      font-size: 0.7rem;
+      font-weight: 100;
+    }
+  }
+  &__icon {
+    @include imgIcon;
+  }
+  .logo {
+    width: 13rem;
+    height: auto;
+    padding-bottom: 3rem;
+    background-color: $ftrBg;
+  }
+  &__txt {
+    text-transform: uppercase;
+    font-size: $footer_fontSz;
+    padding: $paraSz;
+    font-weight: 100;
+    color: $footertxtClr;
+  }
+
+  &__.head3 {
+    @extend .footer__txt;
+    font-weight: $hdfontWt;
+  }
+}
+.iconContainer {
+  @include flx;
+  align-items: center;
+  a {
+    @extend .footer__txt;
+    text-decoration: none;
+    padding-right: 3%;
+    white-space: nowrap;
+  }
+}
+.social_logo {
+  width: 2.5rem;
+  height: 2.5rem;
+  padding-right: 0.75rem;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  padding-right: 5rem;
+}
+.lrgInput {
+  width: 70%;
+  height: 2rem;
+  background-color: $footertxtClr;
+}
+.smlInput {
+  width: 97%;
+  height: 2rem;
+  background-color: $footertxtClr;
+  // margin-right: 5%;
+}
+.half {
+  width: 50%;
+  display: flex;
+}
+.full {
+  width: 100%;
+  margin-bottom: 0.5%;
+}
+.footerRow {
+  background-color: #190450;
+  text-align: center;
+  color: #918f8f;
+  font-size: $footer_fontSz;
+}
+
+.fullcont {
+  width: $wd;
+  margin: 0 auto;
+}
