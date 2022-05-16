@@ -137,12 +137,14 @@ body {
 .section {
   display: flex;
   width: 96%;
+  margin: 0 auto;
 }
 
 .imgBox {
   display: flex;
   width: 30%;
   flex-direction: column;
+  margin: 0 auto;
 }
 .imgBox img {
   width: 6rem;
@@ -169,6 +171,7 @@ body {
   display: flex;
   width: 30%;
   flex-direction: column;
+  margin: 0 auto;
 }
 
 .img {
@@ -184,6 +187,7 @@ body {
 .footer {
   background-repeat: no-repeat;
   background-color: #2A5391;
+  width: 100%;
   height: auto;
   box-sizing: border-box;
 }

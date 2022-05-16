@@ -15,6 +15,7 @@
     @include flx;
         width: 30%;
         flex-direction: column;
+        @include cent;
 }
 @mixin imgIcon{
     width: 5rem;
