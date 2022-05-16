@@ -1,5 +1,6 @@
 @mixin flx{
     display: flex;
+    flex-direction: row;
 }
 @mixin cent {
     margin: 0 auto;
@@ -22,5 +23,5 @@
     background-color: $ftrBg;
     padding: 0 2rem 1rem 0;
     height: auto;
-
+    
 }

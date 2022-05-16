@@ -186,8 +186,8 @@ body {
     padding-left: $pad-left;
     color: $footertxtClr;
     line-height: $ftrLineHt;
-    margin: 0 auto;
-    // @include cent;
+    
+   @include cent;
        .formdata {
       font-size: 0.7rem;
       font-weight: 100;

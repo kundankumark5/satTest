@@ -6,7 +6,7 @@
 
 .button {
   padding: 1.5% 3%;
-  border-radius: 0.75rem;
+  border-radius: 0.78rem;
   background-color: rgb(224, 105, 0);
   color: white;
   white-space: nowrap;
@@ -46,6 +46,7 @@ body {
 
 .topNav {
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
   margin: 0.25% 1%;
@@ -73,6 +74,7 @@ body {
 .header .imgTxt {
   width: 100%;
   display: flex;
+  flex-direction: row;
   color: #fff;
 }
 .header .imgTxt p {
@@ -113,6 +115,7 @@ body {
 }
 .box .boxImg {
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   text-align: center;
   text-transform: uppercase;
@@ -136,12 +139,14 @@ body {
 
 .section {
   display: flex;
+  flex-direction: row;
   width: 96%;
   margin: 0 auto;
 }
 
 .imgBox {
   display: flex;
+  flex-direction: row;
   width: 30%;
   flex-direction: column;
   margin: 0 auto;
@@ -169,6 +174,7 @@ body {
 
 .column {
   display: flex;
+  flex-direction: row;
   width: 30%;
   flex-direction: column;
   margin: 0 auto;
@@ -206,6 +212,7 @@ body {
 .footer__footerbox {
   width: 100%;
   display: flex;
+  flex-direction: row;
   height: auto;
   background-color: #2A5391;
   padding-left: 2%;
@@ -242,6 +249,7 @@ body {
 
 .iconContainer {
   display: flex;
+  flex-direction: row;
   align-items: center;
 }
 .iconContainer a {
